@@ -21,17 +21,23 @@
     <%= form.text_field :string %>
   </div>
 
-  <div>
-    <%= form.label :completed, style: "display: block" %>
-    <%= form.text_field :completed %>
-  </div>
 
   <div>
-    <%= form.label :boolean, style: "display: block" %>
-    <%= form.text_field :boolean %>
+    <%= form.label :completed, style: "display: block" %>
+    <%= form.text_field :completed%>
+  </div>
+
+    
+</div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for ="flexCheckDefault">
+        <%= form.label :boolean, style: "display: inline" %>
+      </label>
   </div>
 
   <div>
     <%= form.submit %>
   </div>
 <% end %>
+

@@ -1,22 +1,36 @@
 <div id="<%= dom_id list %>">
-  <p>
-    <strong>Description:</strong>
-    <%= list.description %>
-  </p>
 
-  <p>
-    <strong>String:</strong>
-    <%= list.string %>
-  </p>
-
-  <p>
-    <strong>Completed:</strong>
-    <%= list.completed %>
-  </p>
-
-  <p>
-    <strong>Boolean:</strong>
-    <%= list.boolean %>
-  </p>
-
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">1</th>
+      <th scope="col">Description:</th>
+      <th scope="col">Task:</th>
+      <th scope="col">
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          completed
+        </label></th>
+      <th scope="col">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Boolean
+        </label>
+      </th>
+      </div>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= list.description %></td>
+      <td><%= list.string %></td>
+      <td><%= list.completed %></td>
+      <td><%= list.boolean%></td>
+    </tr>
+    </tr>
+  </tbody>
+</table>
 </div>
+
